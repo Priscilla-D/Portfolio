@@ -1,8 +1,8 @@
 ---
-title: Bloom Box
+title: My billing App
 publishDate: 2019-12-01 00:00:00
-link: https://www.google.com/
-img: /assets/stock-2.jpg
+link: https://my-billing.netlify.app
+img: /assets/billing.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
   We paired with a cutting-edge music API and a team of horticulturalists

@@ -1,8 +1,8 @@
 ---
 title: Kyoto Tours
 publishDate: 2020-03-02 00:00:00
-link: https://kyoto-tours.netlify.app/
 img: /assets/kyoto.png
+link: https://kyoto-tours.netlify.app/
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!

@@ -7,15 +7,12 @@ interface Props {
 	align?: 'start' | 'center';
 }
 
-const { align = 'center', tagline, title, link } = Astro.props;
+const { align = 'center', tagline, title } = Astro.props;
 ---
 
 <div class:list={['hero stack gap-4', align]}>
 	<div class="stack gap-2">
 		<h1 class="title">{title}</h1>
-    <!-- <a href={link} target="_blank">
-      <Icon icon="rocket-launch" size="1em" />
-      Démo</a> -->
 		{tagline && <p class="tagline">{tagline}</p>}
 	</div>
 	<slot />
