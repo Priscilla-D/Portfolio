@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
+import Icon from '../components/Icon.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
@@ -9,51 +9,97 @@ import Hero from '../components/Hero.astro';
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				title="À propos"
+				tagline="Pour en savoir plus sur mon parcours et mes aptitudes, c'est par ici."
 			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Priscilla Durand at work with a colleague"
-				/>
+      <div class="img-block">
+      <img
+        src="/assets/team.png"
+        alt="Priscilla Durand at work with a colleague"
+      />
+    </div>
+      
+      <div class="cv">
+        <p>Mon CV au format PDF</p>
+        <a href="../../public/assets/cv.pdf" download="CV Priscilla Durand"><Icon icon="document" size="1.2em" /></a>
+      </div>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">Parcours</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl
-						condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu
-						odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum
-						dui faucibus in ornare.
+						C'est en 2020, après avoir mené une carrière de plusieurs années dans l'assistanat, que j'ai découvert le métier qui me passionne aujourd'hui.
+            <br>
+            De nature curieuse, aimant relever les défis et apprendre chaque jour, ce métier était fait pour moi et me permet de m'enrichir techniquement sur le plan professionnel et personnel.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						En 2021 a donc débuté mon parcours de développeuse Web au sein du centre de formation O'Clock.
+            J'y ai appris les bases des languages de programmation (html, css, javascript, php) mais également le back-end (structure de programmation MVC) et la gestion des bases de données (MySql).
+            <br>
+            Je me suis notamment spécialisée dans le framework React sur lequel j'ai travaillé lors de mon projet de fin de formation en collaboration avec 4 développeurs.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+Dès la fin de ma formation, j'ai intégré l'équipe de développement d'articho, le logiciel (Saas) de gestion de projet de la société placeshaker pendant presque 2 ans.
+					</p>
+					<p>
+            Epanouie par le métier que j'exerce aujourd'hui, je cherche à monter en compétence avec une équipe passionnée et impliquée, et par la suite, étendre mes domaines de compétences (en back end éventuellement).
 					</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Formation</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>Formation école O' Clock : Développeuse Web et Web mobile fullstack.</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content content-list">
+          <div class="list-block">
+          <h3>Front end</h3>
+            <ul>
+              <li>React</li>
+              <li>Typescript</li>
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>Javascript</li>
+            </ul>
+            </div>
+
+            <div class="list-block">
+          <h3>Frameworks/Librairies</h3>
+            <ul>
+              <li>React</li>
+              <li>Next JS</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+
+            <div class="list-block">
+          <h3>Environnements / services / back</h3>
+          <div class="back">
+            <ul>
+              <li>Linux</li>
+              <li>MacOs</li>
+              <li>GIT</li>
+              <li>Github</li>
+              <li>Node.js</li>
+              <li>PHP</li>
+            </ul>
+
+            <ul><li>Firebase</li>
+              <li>Vercel</li>
+              <li>Mongo DB</li>
+              <li>MySql</li>
+              <li>Jest</li></ul>
+          </div>
+        </div>
+            <div class="list-block">
+          <h3>Méthodologie</h3>
+            <ul>
+              <li>Agile - SCRUM</li>
+            </ul></div>
 				</div>
 			</section>
 		</main>
@@ -69,10 +115,26 @@ import Hero from '../components/Hero.astro';
 		gap: 3.5rem;
 	}
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
+  .cv p{
+    font-size: var(--text-lg);
+    display: inline-block;
+    margin: 2rem 0;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  a {
+    margin-left: 1rem;
+		text-align: center;
+		padding: 0.3em 0.5em 0.5em;
+		color: var(--accent-text-over);
+		text-decoration: none;
+		border-radius: 999rem;
+		background: var(--gradient-accent-orange);
 		box-shadow: var(--shadow-md);
+		white-space: nowrap;
 	}
 
 	section {
@@ -81,6 +143,19 @@ import Hero from '../components/Hero.astro';
 		gap: 0.5rem;
 		color: var(--gray-200);
 	}
+
+  .content-list h3{
+    font-size: var(--text-xl);
+    padding-bottom: 2px;;
+  }
+
+  .list-block{
+    padding-bottom: 1rem;
+  }
+
+  li {
+    list-style-type: circle;
+  }
 
 	.section-title {
 		grid-column-start: 1;
@@ -103,7 +178,32 @@ import Hero from '../components/Hero.astro';
 		text-decoration-color: currentColor;
 	}
 
+  img {
+		margin-top: 1.5rem;
+		border-radius: 0.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
 	@media (min-width: 50em) {
+    .back{
+      display: inline-flex;
+    }
+
+    .list-block {
+      padding-bottom: 2rem;
+    }
+
+    .img-block{
+    position: relative;
+  }
+
+    img {
+    width: 30%;
+    position: absolute;
+    top: -10rem;
+    left: -12rem;
+  }
+
 		.about {
 			display: grid;
 			grid-template-columns: 1fr 60% 1fr;

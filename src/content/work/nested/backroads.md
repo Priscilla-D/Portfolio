@@ -3,15 +3,17 @@ title: Backroads
 publishDate: 2020-03-04 00:00:00
 img: /assets/backroads.png
 link: https://backroads-deployed.netlify.app/
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+img_alt: Backroads application picture
 description: |
-  Développement d'un site vitrine en React, CSS.
+  Développement d'un site vitrine en React et CSS.
 tags:
-  - Design
-  - Dev
-  - Branding
+  - Responsive
+  - React
+  - CSS
 ---
 
-Utilisation des variables CSS....
+> Backroads App
 
-Site développé en responsive.
+Création d'un site vitrine pour une agence de voyage.
+
+L'application est développée en responsive avec React, en utilisant notamment les variables CSS, les médias queries, flexbox et les animations.

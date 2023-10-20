@@ -35,9 +35,6 @@ const { Content } = await entry.render();
 				<div class="wrapper stack gap-2">
 					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Projets</a>
 					<Hero title={entry.data.title} align="start">
-            <a href={entry.data.link} class="demo-link" target="_blank">
-              <Icon  icon="arrow" size="1.2em" />
-              <p class="demo">Démo ici</p></a>
 						<div class="details">
 							<div class="tags">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
@@ -48,9 +45,15 @@ const { Content } = await entry.render();
 				</div>
 			</header>
 			<main class="wrapper">
+        
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
+					<div>
+            <a href={entry.data.link} class="demo-link" target="_blank">
+              <Icon  icon="arrow" size="1.2em" />
+              <p class="demo">Visitez le site</p></a>
+            </div>
+          <div class="content">
 						<Content />
 					</div>
 				</div>
@@ -72,7 +75,18 @@ const { Content } = await entry.render();
 
   .demo-link {
     text-decoration: none;
+		padding: 0.5rem 1rem;
+		border: 1px solid var(--accent-regular);
+		background-color: var(--gray-999);
+		border-radius: 999rem;
+		font-size: var(--text-md);
+		line-height: 1.35;
+		white-space: nowrap;
   }
+
+  .demo-link:hover {
+  background-color: var(--accent-overlay);
+}
 
 	.details {
 		display: flex;
