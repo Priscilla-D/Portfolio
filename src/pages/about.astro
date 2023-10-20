@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import Cv from '../../public/assets/cv.pdf';
 ---
 
 <BaseLayout title="About | Priscilla Durand" description="About Priscilla Durand Lorem Ipsum">
@@ -21,7 +22,7 @@ import Hero from '../components/Hero.astro';
       
       <div class="cv">
         <p>Mon CV au format PDF</p>
-        <a href="../../public/cv.pdf" download="CV Priscilla Durand"><Icon icon="document" size="1.2em" /></a>
+        <a href={Cv} download="CV Priscilla Durand"><Icon icon="document" size="1.2em" /></a>
       </div>
 			</Hero>
 
