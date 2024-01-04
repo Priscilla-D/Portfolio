@@ -5,14 +5,15 @@ img: /assets/quizz-app.png
 link: https://app-quizz-react.netlify.app/
 img_alt: Quizz application
 description: |
-  Jeu Quizz en React.
+  Jeu Quizz responsive en React.
 tags:
   - Typescript
   - API
   - REACT
+  - Responsive
   - Styled component
 ---
 
 > React Quizz App
 
-Développement d'une application de jeu quizz en typescript et styled component.
+Développement d'une application responsive de jeu quizz en typescript et styled component.
